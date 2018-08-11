@@ -1,0 +1,15 @@
+{
+  "genesis_time": "0001-01-01T00:00:00Z",
+  "chain_id": "default",
+  "validators": [
+    {
+      "pub_key": {
+        "type": "AC26791624DE60",
+        "value": "etTYGE5k756zLRp4YBzWvyVdeVvI0iYcWMUZzR+14tg="
+      },
+      "power": 10,
+      "name": ""
+    }
+  ],
+  "app_hash": ""
+}
