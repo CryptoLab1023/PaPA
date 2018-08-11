@@ -4,3 +4,13 @@
 14:22:52.535801 version@stat F·[] S·0B[] Sc·[]
 14:22:52.536317 db@janitor F·2 G·0
 14:22:52.536364 db@open done T·2.204418ms
+=============== Aug 11, 2018 (JST) ===============
+14:50:12.729249 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+14:50:12.730266 version@stat F·[] S·0B[] Sc·[]
+14:50:12.730301 db@open opening
+14:50:12.730381 journal@recovery F·1
+14:50:12.737183 journal@recovery recovering @1
+14:50:12.746387 memdb@flush created L0@2 N·1728 S·177KiB ",v1728":"blo..ore,v5"
+14:50:12.749073 version@stat F·[1] S·177KiB[177KiB] Sc·[0.25]
+14:50:12.750677 db@janitor F·3 G·0
+14:50:12.750714 db@open done T·20.395336ms
