@@ -4,3 +4,8 @@
 12:50:12.959037 version@stat F·[] S·0B[] Sc·[]
 12:50:12.959559 db@janitor F·2 G·0
 12:50:12.959600 db@open done T·923.277µs
+13:47:26.900277 memdb@flush N·20342 S·3MiB
+13:47:27.269742 memdb@flush created L0@3 N·20342 S·2MiB ",v20340":"blo..ore,v5"
+13:47:27.269804 version@stat F·[1] S·2MiB[2MiB] Sc·[0.25]
+13:47:27.270138 memdb@flush committed F·1 T·369.404231ms
+13:47:27.273706 journal@remove removed @1
