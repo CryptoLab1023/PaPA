@@ -1,5 +1,5 @@
 pragma solidity ^0.4.24;
-pragma experimental ABIEncoderV2;
+pragma production ABIEncoderV2;
 
 contract SafeMath {
   //internals
