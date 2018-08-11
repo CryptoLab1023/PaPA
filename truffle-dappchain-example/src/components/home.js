@@ -1,17 +1,13 @@
 import React, {Component} from 'react' ;
 import Woman from './woman';
-<<<<<<< HEAD
 import Seek from './seek';
-=======
 import Navbar from './navbar';
->>>>>>> master
 
 export default class Home extends Component {
 
     render() {
     return (
         <div>
-<<<<<<< HEAD
             <div>
                 <nav className="navbar navbar-default navbar-fixed-top am-top-header">
                     <div className="container-fluid">
@@ -23,26 +19,6 @@ export default class Home extends Component {
                                 <div className="navbar-collapse">
                                     <ul className="navbar-right am-icons-nav nav navbar-nav">
                                         <Seek />
-                                        <li className="dropdown">
-                                            <a href="">
-                                                <img src="../img/heart_1817-500x375.png" alt="" width="25px" height="25px" /> 
-                                                <small>お相手から</small>
-                                            </a>
-                                        </li>
-                                        <li className="dropdown">
-                                            <a href="">
-                                                <img src="../img/1771.png" alt="" width="25px" height="25px" />
-                                                <small>メッセージ</small>
-                                            </a>
-                                        </li>
-                                        {/* <!--font awesome, image適当に３種類ほど--> */}
-                                        <li className="dropdown">
-                                            <a href="">
-                                                <img src="../img/icon-home-c01.png" alt="" width="25px" height="25px" />
-                                                <small>マイページ</small>
-                                            </a>
-                                        </li>
-                                        { /* <!--font awesome, image適当に３種類ほど-->*/}
                                     </ul>
                                 </div>
                             </div>
@@ -53,19 +29,14 @@ export default class Home extends Component {
                 {/* end nav-barF */}
 
                 {/* start select-woman */}
-                <div className="select-wrapper">
-                    <Woman />
-                    <Woman />
-                    <Woman />
-                    <Woman />
-                    <Woman />
-                </div>
-        </div>
-=======
-            {/* start nav-bar */}
+            <div className="select-wrapper">
+                <Woman />
+                <Woman />
+                <Woman />
+                <Woman />
+                <Woman />
+            </div>
             <Navbar />
-            {/* end nav-bar */}
-            {/* start select-woman */}
             <div className="select-wrapper">
                 <Woman />
                 <Woman />
@@ -83,10 +54,7 @@ export default class Home extends Component {
                 <Woman />
                 <Woman />
             </div>
-            {/* end select-woman */}
         </div>
-        
->>>>>>> master
     )
     }
 }

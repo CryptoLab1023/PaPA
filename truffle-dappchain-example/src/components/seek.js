@@ -1,20 +1,8 @@
-<<<<<<< HEAD
-import React, {Component} from 'react' ;
-=======
 import React, {Component} from 'react';
->>>>>>> master
 
 export default class Seek {
     render() {
         return(
-<<<<<<< HEAD
-            <li className="dropdown">
-            <a href="">
-                <img src="../img/serch.gif" alt="" width="25px" height="25px" />
-                <small>さがす</small>
-            </a>
-            </li>
-=======
             <div>
                 <li className="dropdown">
                 <a href="">
@@ -41,7 +29,6 @@ export default class Seek {
                     </a>
                 </li>
             </div>
->>>>>>> master
         )
     }
 }
