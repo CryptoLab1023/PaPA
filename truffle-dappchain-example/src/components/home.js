@@ -1,12 +1,17 @@
-import React from 'react' ;
+import React, {Component} from 'react' ;
 import Woman from './woman';
+<<<<<<< HEAD
 import Seek from './seek';
+=======
+import Navbar from './navbar';
+>>>>>>> master
 
-export default class Home extends React.Component {
+export default class Home extends Component {
 
     render() {
     return (
         <div>
+<<<<<<< HEAD
             <div>
                 <nav className="navbar navbar-default navbar-fixed-top am-top-header">
                     <div className="container-fluid">
@@ -20,7 +25,7 @@ export default class Home extends React.Component {
                                         <Seek />
                                         <li className="dropdown">
                                             <a href="">
-                                                <img src="../img/heart_1817-500x375.png" alt="" width="25px" height="25px" />
+                                                <img src="../img/heart_1817-500x375.png" alt="" width="25px" height="25px" /> 
                                                 <small>お相手から</small>
                                             </a>
                                         </li>
@@ -56,6 +61,32 @@ export default class Home extends React.Component {
                     <Woman />
                 </div>
         </div>
+=======
+            {/* start nav-bar */}
+            <Navbar />
+            {/* end nav-bar */}
+            {/* start select-woman */}
+            <div className="select-wrapper">
+                <Woman />
+                <Woman />
+                <Woman />
+                <Woman />
+                <Woman />
+                <Woman />
+                <Woman />
+                <Woman />
+                <Woman />
+                <Woman />
+                <Woman />
+                <Woman />
+                <Woman />
+                <Woman />
+                <Woman />
+            </div>
+            {/* end select-woman */}
+        </div>
+        
+>>>>>>> master
     )
     }
 }
