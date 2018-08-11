@@ -1,4 +1,5 @@
 pragma solidity ^0.4.24;
+
 import "../node_modules/openzeppelin-solidity/contracts/token/ERC20/StandardToken.sol";
 import "../node_modules/openzeppelin-solidity/contracts/ownership/Ownable.sol";
 
@@ -16,7 +17,7 @@ contract PaPABase is PaPAToken {
         balances[msg.sender] = initialSupply;
         comment.push("");
     }
-    
+
     string[] comment;
     mapping(uint => address) public commentToSender;
     mapping(uint => address) public commentToReceiver;
@@ -24,10 +25,10 @@ contract PaPABase is PaPAToken {
     mapping(address => uint) public sentCommentCounts;
     mapping(address => uint) public receivedCommentCounts;
 
-    function _checkThePeople(address _to) private view returns(bool success) { 
+    function _checkThePeople(address _to) private view returns(bool success) {
         return msg.sender != _to;
     }
-    
+
     function _checkTheAmout(address sender, uint _amount) private view returns(bool success) {
         return balances[sender] > _amount;
     }
