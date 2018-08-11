@@ -9,6 +9,8 @@
     "serve": "webpack-dev-server --hot --content-base ./dist"
   },
   "dependencies": {
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
     "loom-js": "^1.14.0",
     "loom-truffle-provider": "^0.4.0",
     "openzeppelin-solidity": "^1.11.0",
@@ -28,5 +30,7 @@
     "webpack": "^4.14.0",
     "webpack-cli": "^3.0.8",
     "webpack-dev-server": "^3.1.4"
-  }
+  },
+  "proxy": "http://localhost:8080"
+
 }

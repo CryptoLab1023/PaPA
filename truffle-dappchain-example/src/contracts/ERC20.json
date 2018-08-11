@@ -180,9 +180,9 @@
   "sourceMap": "",
   "deployedSourceMap": "",
   "source": "pragma solidity ^0.4.24;\n\nimport \"./ERC20Basic.sol\";\n\n\n/**\n * @title ERC20 interface\n * @dev see https://github.com/ethereum/EIPs/issues/20\n */\ncontract ERC20 is ERC20Basic {\n  function allowance(address owner, address spender)\n    public view returns (uint256);\n\n  function transferFrom(address from, address to, uint256 value)\n    public returns (bool);\n\n  function approve(address spender, uint256 value) public returns (bool);\n  event Approval(\n    address indexed owner,\n    address indexed spender,\n    uint256 value\n  );\n}\n",
-  "sourcePath": "/Users/ko/loom_papa/PaPA/truffle-dappchain-example/node_modules/openzeppelin-solidity/contracts/token/ERC20/ERC20.sol",
+  "sourcePath": "/Users/ryotaro/workspace/PaPA/truffle-dappchain-example/node_modules/openzeppelin-solidity/contracts/token/ERC20/ERC20.sol",
   "ast": {
-    "absolutePath": "/Users/ko/loom_papa/PaPA/truffle-dappchain-example/node_modules/openzeppelin-solidity/contracts/token/ERC20/ERC20.sol",
+    "absolutePath": "/Users/ryotaro/workspace/PaPA/truffle-dappchain-example/node_modules/openzeppelin-solidity/contracts/token/ERC20/ERC20.sol",
     "exportedSymbols": {
       "ERC20": [
         510
@@ -203,7 +203,7 @@
         "src": "0:24:4"
       },
       {
-        "absolutePath": "/Users/ko/loom_papa/PaPA/truffle-dappchain-example/node_modules/openzeppelin-solidity/contracts/token/ERC20/ERC20Basic.sol",
+        "absolutePath": "/Users/ryotaro/workspace/PaPA/truffle-dappchain-example/node_modules/openzeppelin-solidity/contracts/token/ERC20/ERC20Basic.sol",
         "file": "./ERC20Basic.sol",
         "id": 470,
         "nodeType": "ImportDirective",
@@ -705,7 +705,7 @@
     "src": "0:530:4"
   },
   "legacyAST": {
-    "absolutePath": "/Users/ko/loom_papa/PaPA/truffle-dappchain-example/node_modules/openzeppelin-solidity/contracts/token/ERC20/ERC20.sol",
+    "absolutePath": "/Users/ryotaro/workspace/PaPA/truffle-dappchain-example/node_modules/openzeppelin-solidity/contracts/token/ERC20/ERC20.sol",
     "exportedSymbols": {
       "ERC20": [
         510
@@ -726,7 +726,7 @@
         "src": "0:24:4"
       },
       {
-        "absolutePath": "/Users/ko/loom_papa/PaPA/truffle-dappchain-example/node_modules/openzeppelin-solidity/contracts/token/ERC20/ERC20Basic.sol",
+        "absolutePath": "/Users/ryotaro/workspace/PaPA/truffle-dappchain-example/node_modules/openzeppelin-solidity/contracts/token/ERC20/ERC20Basic.sol",
         "file": "./ERC20Basic.sol",
         "id": 470,
         "nodeType": "ImportDirective",
@@ -1233,5 +1233,5 @@
   },
   "networks": {},
   "schemaVersion": "2.0.1",
-  "updatedAt": "2018-08-11T03:51:39.234Z"
+  "updatedAt": "2018-08-11T09:14:09.195Z"
 }

@@ -1,24 +1,15 @@
 =============== Aug 11, 2018 (JST) ===============
-14:22:52.576386 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
-14:22:52.578408 db@open opening
-14:22:52.579055 version@stat F·[] S·0B[] Sc·[]
-14:22:52.579772 db@janitor F·2 G·0
-14:22:52.579890 db@open done T·1.43818ms
+17:06:37.637159 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+17:06:37.638272 db@open opening
+17:06:37.638674 version@stat F·[] S·0B[] Sc·[]
+17:06:37.639089 db@janitor F·2 G·0
+17:06:37.639121 db@open done T·826.624µs
 =============== Aug 11, 2018 (JST) ===============
-14:40:51.642947 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
-14:40:51.645287 version@stat F·[] S·0B[] Sc·[]
-14:40:51.645348 db@open opening
-14:40:51.645662 journal@recovery F·1
-14:40:51.650562 journal@recovery recovering @1
-14:40:51.651368 version@stat F·[] S·0B[] Sc·[]
-14:40:51.654658 db@janitor F·2 G·0
-14:40:51.654713 db@open done T·9.330359ms
-=============== Aug 11, 2018 (JST) ===============
-15:49:11.393724 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
-15:49:11.395157 version@stat F·[] S·0B[] Sc·[]
-15:49:11.395200 db@open opening
-15:49:11.395325 journal@recovery F·1
-15:49:11.395524 journal@recovery recovering @2
-15:49:11.396138 version@stat F·[] S·0B[] Sc·[]
-15:49:11.399803 db@janitor F·2 G·0
-15:49:11.399880 db@open done T·4.654328ms
+17:11:50.950647 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+17:11:50.952763 version@stat F·[] S·0B[] Sc·[]
+17:11:50.952810 db@open opening
+17:11:50.952926 journal@recovery F·1
+17:11:50.957151 journal@recovery recovering @1
+17:11:50.958101 version@stat F·[] S·0B[] Sc·[]
+17:11:50.960172 db@janitor F·2 G·0
+17:11:50.960224 db@open done T·7.390914ms
