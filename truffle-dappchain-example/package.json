@@ -11,7 +11,9 @@
   "dependencies": {
     "loom-js": "^1.14.0",
     "loom-truffle-provider": "^0.4.0",
-    "truffle": "^4.1.13"
+    "openzeppelin-solidity": "^1.11.0",
+    "truffle": "^4.1.13",
+    "websocket": "^1.0.26"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
