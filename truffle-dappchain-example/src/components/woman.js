@@ -1,7 +1,7 @@
 import React, {Component} from 'react' ;
 
 
-export default class Woman extends Component {
+export default class Woman extends React.Component {
 
     render() {
         return (

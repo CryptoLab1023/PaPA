@@ -1,8 +1,8 @@
-import React, {Component} from 'react' ;
+import React from 'react' ;
 import Woman from './woman';
 import Seek from './seek';
 
-export default class Home extends Component {
+export default class Home extends React.Component {
 
     render() {
     return (
@@ -20,7 +20,7 @@ export default class Home extends Component {
                                         <Seek />
                                         <li className="dropdown">
                                             <a href="">
-                                                <img src="../img/heart_1817-500x375.png" alt="" width="25px" height="25px" /> 
+                                                <img src="../img/heart_1817-500x375.png" alt="" width="25px" height="25px" />
                                                 <small>お相手から</small>
                                             </a>
                                         </li>
