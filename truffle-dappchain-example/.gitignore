@@ -1,8 +1,6 @@
 node_modules
-app.db
-chaindata
-genesis.json
-loom
 
 # If you want to versioning build files (and it is recommended) you should remove or comment the line below
 src/contracts
+
+# 0x01D10029c253fA02D76188b84b5846ab3D19510D
