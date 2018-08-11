@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import Contract from './contract'
+import Home from './components/home'
 
 const Index = class Index extends React.Component {
   constructor(props) {
@@ -37,21 +38,7 @@ const Index = class Index extends React.Component {
   render() {
     return (
       <div className="container" style={{ marginTop: 10 }}>
-        <form>
-          <div className="form-group">
-            <label>Value</label>
-            <input type="number" className="form-control" onChange={(event) => this.onChangeHandler(event)} />
-            <small className="form-text text-muted">Set a number</small>
-          </div>
-          <button type="button" disabled={!this.state.isValid} className="btn btn-primary" onClick={() => this.confirmValue()}>Confirm</button>
-        </form>
-        <div className="alert alert-success">
-          Value set is {this.state.value} (this value only updates if values is 10)
-        </div>
-        <hr />
-        <pre>
-          {this.state.tx && JSON.stringify(this.state.tx, null, 2)}
-        </pre>
+        <Home />
       </div>
     )
   }
