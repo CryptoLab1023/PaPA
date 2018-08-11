@@ -1,0 +1,16 @@
+=============== Aug 11, 2018 (JST) ===============
+10:45:20.198614 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+10:45:20.199380 db@open opening
+10:45:20.199698 version@stat F·[] S·0B[] Sc·[]
+10:45:20.200024 db@janitor F·2 G·0
+10:45:20.200051 db@open done T·654.996µs
+12:03:36.080884 memdb@flush N·20349 S·3MiB
+12:03:36.375305 memdb@flush created L0@3 N·20349 S·2MiB ",v20346":"blo..ore,v5"
+12:03:36.380460 version@stat F·[1] S·2MiB[2MiB] Sc·[0.25]
+12:03:36.384084 memdb@flush committed F·1 T·301.435304ms
+12:03:36.443410 journal@remove removed @1
+13:00:49.979466 memdb@flush N·20327 S·3MiB
+13:00:50.409750 memdb@flush created L0@5 N·20327 S·2MiB ",v40674":"blo..ore,v20351"
+13:00:50.410011 version@stat F·[2] S·4MiB[4MiB] Sc·[0.50]
+13:00:50.412074 memdb@flush committed F·1 T·431.870562ms
+13:00:50.441733 journal@remove removed @2
