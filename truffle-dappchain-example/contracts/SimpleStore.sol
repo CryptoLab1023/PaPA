@@ -3,7 +3,7 @@ pragma solidity ^0.4.24;
 import "../node_modules/openzeppelin-solidity/contracts/token/ERC20/StandardToken.sol";
 import "../node_modules/openzeppelin-solidity/contracts/ownership/Ownable.sol";
 
-contract PaPAToken is StandardToken {
+contract PaPAToken is StandardToken, Ownable {
     string public name = "PaPA";
     string public symbol = "PPA";
     uint public decimals = 18;
