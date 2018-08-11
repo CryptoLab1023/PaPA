@@ -335,4 +335,12 @@ contract PaPABase is PaPAToken {
         return comments;
     }
 
+    function getEvaluation(address _from, uint _amount) external {
+        transferFrom(_from, msg.sender, _amount);
+    }
+
+    function _evaluation(address _receiver, uint _amount) private {
+        approve(_receiver, _amount);
+    }
+
 }
