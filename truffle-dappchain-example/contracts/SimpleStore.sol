@@ -11,7 +11,6 @@ contract PaPAToken is StandardToken, Ownable {
 
 contract PaPABase is PaPAToken {
 
-
     constructor(uint initialSupply) public {
         totalSupply_ = initialSupply;
         balances[msg.sender] = initialSupply;
