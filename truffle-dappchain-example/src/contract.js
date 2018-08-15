@@ -6,7 +6,7 @@ import {
 } from 'loom-js'
 
 import Web3 from 'web3'
-import SimpleStore from './contracts/SimpleStore.json'
+import PaPABase from './contracts/PaPABase.json'
 
 export default class Contract {
   async loadContract() {
@@ -42,48 +42,44 @@ export default class Contract {
 
   async _createContractInstance() {
     const networkId = await this._getCurrentNetwork()
-    this.currentNetwork = SimpleStore.networks[networkId]
+    this.currentNetwork = PaPABase.networks[networkId]
 
     if (!this.currentNetwork) {
       throw Error('Contract not deployed on DAppChain')
     }
 
-    const ABI = SimpleStore.abi
-    this.simpleStoreInstance = new this.web3.eth.Contract(ABI, this.currentNetwork.address, {
+    const ABI = PaPABase.abi
+    this.PaPABaseInstance = new this.web3.eth.Contract(ABI, this.currentNetwork.address, {
       from: this.currentUserAddress
     })
 
-    this.simpleStoreInstance.events.NewValueSet({
-      filter: {
-        _value: 10
-      }
-    }, (err, event) => {
-      if (err) console.error('Error on event', err)
-      else {
-        if (this.onEvent) {
-          this.onEvent(event.returnValues)
-        }
-      }
-    })
   }
 
   addEventListener(fn) {
     this.onEvent = fn
   }
 
+  async getContractAddress() {
+    return await this.PaPABaseInstance
+  }
+
+  async getAccountAddress() {
+    return await this.web3.eth.getAccounts()
+  }
+
   async _getCurrentNetwork() {
     return await this.web3.eth.net.getId()
   }
 
-  async setValue(value) {
-    return await this.simpleStoreInstance.methods.set(value).send({
-      from: this.currentUserAddress
-    })
-  }
+  // async setValue(value) {
+  //   return await this.PaPABaseInstance.methods.set(value).send({
+  //     from: this.currentUserAddress
+  //   })
+  // }
 
-  async getValue() {
-    return await this.simpleStoreInstance.methods.get().call({
-      from: this.currentUserAddress
-    })
-  }
+  // async getValue() {
+  //   return await this.PaPABaseInstance.methods.get().call({
+  //     from: this.currentUserAddress
+  //   })
+  // }
 }

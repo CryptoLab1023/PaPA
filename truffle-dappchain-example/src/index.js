@@ -1,8 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import Contract from './contract'
-import bodyParser from 'body-parser'
-import axios from 'axios';
+import axios from 'axios'
 
 import Home from './components/home'
 
@@ -29,6 +28,8 @@ const Index = class Index extends React.Component {
       this.setState({ value: v._value })
     })
 
+    console.log(await this.contract.getContractAddress())
+    console.log(await this.contract.getAccountAddress())
     axios.get(`http://localhost:8080/get`)
       .then(res => {
         const address = res.data;
@@ -38,29 +39,6 @@ const Index = class Index extends React.Component {
       }).catch(() => {
         return;
       })
-  }
-
-  async sendTheMessage() {
-      axios.post(`http://localhost:8080/sendMessage`)
-        .then(res => {
-          const bool = res.data;
-          this.setState({
-            sendMessageBoolean: bool
-          });
-        }).catch(() => {
-          return;
-        })
-  }
-
-  onChangeHandler(event) {
-    this.value = event.target.value
-    const isValid = this.value > 0
-    this.setState({ isValid })
-  }
-
-  async confirmValue() {
-    const tx = await this.contract.setValue(this.value)
-    this.setState({ tx })
   }
 
   render() {
